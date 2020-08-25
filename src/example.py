@@ -1,17 +1,3 @@
-
-# MarianMT Service CLIENT
-Client wrapper for easy usage of MarianMT Service, wrapping the http requests in a simply Python interfrace.
-requires traslator_service.docker to run on an accessible service.
-
-## Installation
-```bash
-git clone gitlab.com/miriam_translator_repository.git
-python3 setup.py bdist_wheel
-pip3 install translator_client-0.0.2-py3-none-any.whl
-```
-
-## Example
-```python
 from translator_client import TranslatorClient
 
 
@@ -28,4 +14,3 @@ if __name__ == '__main__':
 
     supported_langs = tc.get_supported_translations()
     [print(lang) for lang in supported_langs]
-```
